@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+/*********MOBILE FIRST STYLES**********/
+
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.header-container {
+   
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    border-bottom: 2px solid black;
+}
+
+nav ul {
+    display: inline;
+}
+
+nav ul li {
+    list-style: none;
+    padding-bottom: 20px;
+}
+
+.intro p {
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.top-section, .bottom-section {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div-one {
+    height: 200px;
+    background-color: black;
+    margin: 15px 0px;
+}
+
+.div-two {
+    height: 200px;
+    background-color: grey;
+    margin: 15px 0px;
+}
+
+.div-three {
+    height: 200px;
+    background-color: black;
+    margin: 15px 0px;
+}
+
+.div-four {
+    height: 200px;
+    background-color: grey;
+    margin: 15px 0px;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    font-size: 0.75em;
+}
+
+footer a:visited {
+    color: darkslategrey;    
+}
+
+/*********TABLET STYLES**********/
+
+
+@media only screen and (min-width: 768px)
+{
+    body { 
+        width: 768px;
+        padding: 20px;
+    }
+
+    .intro p {
+        line-height: 1.5em;
+        text-align: justify;
+    }
+
+    .top-section, .bottom-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .div-one {
+        height: 300px;
+        width: 48%;
+        background-color: black;
+        
+    }
+
+    .div-two {
+        height: 300px;
+        width: 48%;
+        background-color: grey;
+       
+    }
+
+    .div-three {
+        height: 300px;
+        width: 48%;
+        background-color: grey;
+       
+    }
+
+    .div-four {
+        height: 300px;
+        width: 48%;
+        background-color: black;
+    }
+}
+
+/*********DESKTOP STYLES**********/
+
+@media only screen and (min-width: 1200px)
+
+{
+    body { 
+        width: 1200px;
+    }
+    
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        }
+
+    nav ul li {
+        display: inline-block;
+        padding: 0px 15px;
+       
+    }
+
+    .intro {
+        padding: 10px 0px;
+    }
+
+    .top-section, .bottom-section {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .div-one {
+        height: 300px;
+        width: 48%;
+        background-color: black;
+        margin: 20px 0px;
+        
+    }
+
+    .div-two {
+        height: 300px;
+        width: 48%;
+        background-color: grey;
+        margin: 20px 0px;
+    }
+
+    .div-three {
+        height: 300px;
+        width: 48%;
+        background-color: grey;
+        margin: 20px 0px;
+    }
+
+    .div-four {
+        height: 300px;
+        width: 48%;
+        background-color: black;
+        margin: 20px 0px;
+    }
+}
