@@ -34,7 +34,7 @@ nav ul li {
 
 .intro p {
     line-height: 1.5em;
-    text-align: center;
+    text-align: justify;
 }
 
 .top-section, .bottom-section {
@@ -93,7 +93,11 @@ footer a:visited {
 
     .top-section, .bottom-section {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+    }
+
+    .div-container {
+        display: flex;
         justify-content: space-between;
     }
 
@@ -153,7 +157,16 @@ footer a:visited {
 
     .top-section, .bottom-section {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+    }
+
+    .div-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row nowrap;
+        height: 350px;
+        width: 100%;
     }
 
     .div-one {
